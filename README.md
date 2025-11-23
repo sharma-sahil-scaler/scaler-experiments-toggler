@@ -33,6 +33,11 @@ The extension reads experiments from DOM elements with `data-variant-key` and `d
 
 Variant options and percentages are fetched from the Flagr API at `abex.scaler.com`.
 
+
+https://github.com/user-attachments/assets/6642985d-4276-4257-9b16-9d9e544f11f7
+
+
+
 ## Project Structure
 
 ```
