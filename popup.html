@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scaler Experiment Tester</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-top">
+          <h1>Scaler Experiments</h1>
+          <span class="badge" id="activeCount">0 active</span>
+        </div>
+        <p class="domain" id="currentDomain">Loading...</p>
+      </header>
+
+      <div class="search-bar">
+        <svg
+          class="search-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <input
+          type="text"
+          id="searchExperiments"
+          placeholder="Search experiments..."
+        />
+      </div>
+
+      <div class="experiments-container" id="experimentsContainer">
+        <div id="experimentsList" class="experiments-list">
+          <div class="loading-state">
+            <div class="spinner"></div>
+            <p>Loading experiments...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-actions">
+        <button id="saveChanges" class="btn btn-primary" disabled>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"
+            ></path>
+            <polyline points="17 21 17 13 7 13 7 21"></polyline>
+            <polyline points="7 3 7 8 15 8"></polyline>
+          </svg>
+          Save & Apply
+        </button>
+        <button id="refreshPage" class="btn btn-secondary">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+          </svg>
+          Refresh
+        </button>
+      </div>
+
+      <div id="toast" class="toast"></div>
+    </div>
+
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>
