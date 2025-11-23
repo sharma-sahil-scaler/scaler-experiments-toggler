@@ -52,14 +52,4 @@ scaler-experiment-toggler/
 - Chrome or Arc browser
 - Access to Scaler pages with experiment elements
 
-## Distribution
-
-To share with your team:
-
-1. Zip the extension folder:
-   ```bash
-   zip -r scaler-experiment-tester.zip . -x "*.git*" -x "*.DS_Store"
-   ```
-2. Share the ZIP file via Slack or Google Drive
-3. Team members follow the installation steps above
 # scaler-experiments-toggler
